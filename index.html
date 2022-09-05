@@ -1,0 +1,162 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Before & After Comparison Slider Demo</title>
+	<style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      div#comparison {
+        width: 60vw;
+        height: 60vw;
+        max-width: 600px;
+        max-height: 600px;
+        overflow: hidden;
+      }
+      div#comparison figure {
+        background-image: url(img/ang2.png);
+        background-size: cover;
+        position: relative;
+        font-size: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      div#comparison figure > img {
+        position: relative;
+        width: 100%;
+      }
+      div#comparison figure div {
+        background-image: url(img/ang1.png);
+        background-size: cover;
+        position: absolute;
+        width: 50%;
+        box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        bottom: 0;
+        height: 100%;
+      }
+
+      input[type="range"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: relative;
+        top: -2rem;
+        left: -2%;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 102%;
+      }
+      input[type="range"]:focus {
+        outline: none;
+      }
+      input[type="range"]:active {
+        outline: none;
+      }
+
+      input[type="range"]::-moz-range-track {
+        -moz-appearance: none;
+        height: 15px;
+        width: 98%;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: relative;
+        outline: none;
+      }
+      input[type="range"]::active {
+        border: none;
+        outline: none;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 15px;
+        background: #fff;
+        border-radius: 0;
+      }
+      input[type="range"]::-moz-range-thumb {
+        -moz-appearance: none;
+        width: 20px;
+        height: 15px;
+        background: #fff;
+        border-radius: 0;
+      }
+      input[type="range"]:focus::-webkit-slider-thumb {
+        background: rgba(255, 255, 255, 0.5);
+      }
+      input[type="range"]:focus::-moz-range-thumb {
+        background: rgba(255, 255, 255, 0.5);
+      }
+    </style>
+    <!-- Bootstrap core CSS -->
+	<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+    
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+ 
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<center>
+<main class="flex-shrink-0">
+  <div class="container">
+    <h1 class="mt-5">Before & After Comparison Slider Demo</h1>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+
+  <body>
+    <div id="comparison">
+      <figure>
+        <div id="divisor"></div>
+      </figure>
+      <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()" />
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+     
+  </div>
+</main>
+</center>
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+   <center> &copy <span class="text-muted">https://mursidin.net</span></center>
+  </div>
+</footer>
+  </body>
+</html>
